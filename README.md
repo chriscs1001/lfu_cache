@@ -36,9 +36,9 @@ This Python implementation is an enhanced version of my solution that passed all
 
 Please feel to use it and enjoy it! Any contribution will be welcome. Please check out the contributing guidelines if you wish to make.
 
-# Real World Applications of LFU Cache
+## Real World Applications of LFU Cache
 
-Consider Redis Servers. They typically sit between Application servers and Database servers when used as an in-memory cache.
+Consider Redis servers. They typically sit between Application servers and Database servers when used as an in-memory cache.
 Redis's Least Frequently Used (LFU) cache eviction mode removes the least accessed keys from the cache to make room for new data.
 Redis keeps track of how often each key is accessed by incrementing a counter each time it's read or written. When the cache is full,
 Redis evicts the keys with the lowest counter values to maintain a high hit rate for frequently accessed data.
