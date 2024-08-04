@@ -20,7 +20,7 @@ The key with the smallest use counter is the least frequently used key.
 When a key is first inserted into the cache, its use counter is set to 1 (due to the put operation).
 The use counter for a key in the cache is incremented either a get or put operation is called on it.
 
-To meet the requirements to make the get and put methods run in O(1) average time complexity, the doubly linked lists(DLLs) and hash maps are employed under the hood.
+To meet the requirements for making the get and put methods run in O(1) average time complexity, the doubly linked lists(DLLs) and hash maps are employed under the hood.
 The DLLs maintains elements with the same use counter in order of use. The most recently used(MRU) element will be pushed at the right.
 The least recently used(LRU) element will be popped from the left. The DLL allows us to access or remove elements at the right or left in O(1) time.
 On top of that, with the help of a cache map, we can access or remove any node in the list in O(1) time.
